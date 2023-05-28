@@ -41,8 +41,8 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Image.asset(
                     "assets/icons/home_chair2.png",
-                    width: 195.w,
-                    height: 195.h,
+                    width: 190.w,
+                    height: 190.h,
                   ),
                   Text(
                     "Choose\nYour Product",

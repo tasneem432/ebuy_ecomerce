@@ -25,7 +25,7 @@ class CheckoutTwoHead extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            height: 40.h,
+            height: 20.h,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -44,7 +44,7 @@ class CheckoutTwoHead extends StatelessWidget {
                 width: 15.w,
               ),
               Text(
-                "Checkout (1/3)",
+                "Checkout (2/3)",
                 style: TextStyle(
                     fontSize: 22.sp,
                     fontFamily: "segeo",
@@ -54,7 +54,7 @@ class CheckoutTwoHead extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: 10.h,
+            height: 5.h,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -120,7 +120,7 @@ class CheckoutTwoHead extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 30.h,
+            height: 20.h,
           ),
         ],
       ),
