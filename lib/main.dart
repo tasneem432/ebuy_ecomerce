@@ -1,4 +1,5 @@
 import 'package:ebuy/app/account/screens/account_screen.dart';
+import 'package:ebuy/app/add_new_address/screens/add_new_address.dart';
 import 'package:ebuy/app/categories_item/screens/categories_item.dart';
 import 'package:ebuy/app/categories_view/screens/categories_view.dart';
 import 'package:ebuy/app/checkout_one/screens/checkout_one.dart';
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
 
-          initialRoute: HelpOne.pageRoute,
+          initialRoute: HomeScreen.pageRoute,
           routes: {
             FirstScreen.pageRoute: (context) => FirstScreen(),//complete
             LoginScreen.pageRoute: (context) => LoginScreen(),
@@ -65,6 +66,7 @@ class MyApp extends StatelessWidget {
             TrackOrderOne.pageRoute: (context) => TrackOrderOne(),
             HelpOne.pageRoute: (context) => HelpOne(),
             HelpTwo.pageRoute: (context) => HelpTwo(),
+            AddNewAddress.pageRoute: (context) => AddNewAddress(),
             
           },
 

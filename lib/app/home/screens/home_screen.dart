@@ -2,14 +2,18 @@ import 'package:ebuy/app/categories_item/screens/categories_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'home_screen_drawer.dart';
+
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
   static const pageRoute = '/home-screen';
+  final GlobalKey<ScaffoldState> _globalKey = GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+          key: _globalKey,
+          drawer: HomeScreenDrawer(),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.only(left: 30.w, right: 30.w),
@@ -25,10 +29,15 @@ class HomeScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   //Image.asset("assets/icons/logo.png"),
-                  Icon(
-                    Icons.menu,
-                    color: Colors.black,
-                    size: 40.w,
+                  GestureDetector(
+                    onTap: (){
+                      _globalKey.currentState?.openDrawer();
+                    },
+                    child: Icon(
+                      Icons.menu,
+                      color: Colors.black,
+                      size: 40.w,
+                    ),
                   ),
                   Image.asset("assets/icons/home_logo.1png.png")
                 ],
