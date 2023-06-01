@@ -1,3 +1,4 @@
+import 'package:ebuy/app/track_order_one/widgets/track_order_one_head.dart';
 import 'package:ebuy/general/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -18,28 +19,7 @@ class TrackOrderOne extends StatelessWidget {
               SizedBox(
                 height: 20.h,
               ),
-              Padding(
-                padding: EdgeInsets.only(left: 50.w, right: 50.w),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Icon(
-                      Icons.arrow_back,
-                      size: 28.w,
-                      color: AppColors.first_blue_color,
-                    ),
-                    Text(
-                      "Track Orders",
-                      style: TextStyle(
-                          fontSize: 25.sp,
-                          fontWeight: FontWeight.bold,
-                          color: AppColors.first_blue_color,
-                          fontFamily: "segeo"),
-                    ),
-                    SizedBox()
-                  ],
-                ),
-              ),
+              TrackOrderOneHead(),
               SizedBox(
                 height: 10.h,
               ),

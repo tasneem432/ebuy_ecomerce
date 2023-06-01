@@ -17,13 +17,14 @@ import 'package:ebuy/app/otp/screens/otp_screen.dart';
 import 'package:ebuy/app/search/screens/search_screen.dart';
 import 'package:ebuy/app/sign_up/screens/sign_up_screen.dart';
 import 'package:ebuy/app/test_ar/screens/test_ar.dart';
+import 'package:ebuy/app/track_order_map/screens/track_order_map.dart';
 import 'package:ebuy/app/track_order_one/screens/track_order_one.dart';
 import 'package:ebuy/app/wishlist_one/screens/wishlist_one.dart';
 import 'package:ebuy/app/wishlist_two/screens/wishlist_two.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-void main() { 
+void main() {  
   runApp(const MyApp());
 }
 
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
 
-          initialRoute: HomeScreen.pageRoute,
+          initialRoute: TrackOrderMap.pageRoute,
           routes: {
             FirstScreen.pageRoute: (context) => FirstScreen(),//complete
             LoginScreen.pageRoute: (context) => LoginScreen(),
@@ -67,6 +68,7 @@ class MyApp extends StatelessWidget {
             HelpOne.pageRoute: (context) => HelpOne(),
             HelpTwo.pageRoute: (context) => HelpTwo(),
             AddNewAddress.pageRoute: (context) => AddNewAddress(),
+            TrackOrderMap.pageRoute: (context) => TrackOrderMap(),
             
           },
 
